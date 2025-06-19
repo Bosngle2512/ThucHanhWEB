@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tt img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        div.tt {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
+        
+        .c2-6 div,
+        figcaption {
+            text-align: center;
+        }
+        
+        .media {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px;
+            gap: 10px 10px;
+            justify-content: center;
+        }
+        
+        .media img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .mid {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        form .mid td {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PHẦN 1: HTML + CSS Cơ bản</h1>
+    <ol>
+        <li>Trang giới thiệu bản thân
+            <div class="tt">
+                <div>
+                    <ul>
+                        <li>&#9989 Thông tin cá nhân
+                            <ul>
+                                <li>Họ và tên: Nguyễn Hoàng Phi Long</li>
+                                <li>Giới tính: Nam</li>
+                                <li>Ngày sinh: 25/12/2004</li>
+                                <li>Ngành: Thương mại điện tử</li>
+                                <li>Trường: Đại học Công Nghiệp Thành Phố Hồ Chí Minh</li>
+                            </ul>
+                    </ul>
+                </div>
+                <div><img src="https://pic.onlinewebfonts.com/thumbnails/icons_269821.svg" alt=""></div>
+            </div>
+            </li>
+
+            <li>Danh sách các môn học yêu thích
+                <ul class="cr">
+                    <li>Khoa học tự nhiên</li>
+                    <li>Khoa học xã hội</li>
+                    <li>Tiếng Anh, Tiếng Trung</li>
+                </ul>
+            </li>
+            <li>Bảng thời khoá biểu</li>
+            <div>
+                <table class="mid">
+                    <tr>
+                        <th></th>
+                        <th>Thứ 2</th>
+                        <th>Thứ 3</th>
+                        <th>Thứ 4</th>
+                        <th>Thứ 5</th>
+                        <th>Thứ 6</th>
+                    </tr>
+                    <tr>
+                        <td>Tiết 1-3</td>
+                        <td></td>
+                        <td>HTTT&CNW</td>
+                        <td>HTTT&CNW</td>
+                        <td>HTTT&CNW - TH</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tiết 4-6</td>
+                        <td>Tiếng Anh 1</td>
+                        <td>Tiếng Anh 1</td>
+                        <td></td>
+                        <td>HTTT&CNW - TH</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tiết 7-9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tiết 10-12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Tiếng Anh 1</td>
+                    </tr>
+                </table>
+            </div>
+            <li>Form đăng ký thông tin</li>
+            <div>
+                <form action="">
+                    <table class="mid">
+                        <tr>
+                            <td>
+                                <lable for="name">Họ và Tên: </lable>
+                            </td>
+                            <td><input type="text" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="mail">Email: </lable>
+                            </td>
+                            <td><input type="email" id="mail"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="sdt">Số điện thoại: </lable>
+                            </td>
+                            <td><input type="number" id="sdt"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="s">Giới tính: </lable>
+                            </td>
+                            <td>
+                                <select name="sss" id="s">
+                                    <option value="nam">Nam</option>
+                                    <option value="nu">Nữ</option>
+                                    <option value="khac">Khác</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit">
+                                <input type="reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <li>Liên kết điều hướng đến trang khác
+                <ul class="cr">
+                    <li><a href="facebook.com">Facebook</a></li>
+                    <li><a href="tiktok.com">Tiktok</a></li>
+                </ul>
+            </li>
+    </ol>
+    <h1>&#128247 Phần 2: Hình ảnh & Media</h1>
+    <ol start="6">
+        <li class="c2-6">Hiển thị ảnh + mô tả
+            <div><img src="https://media.vov.vn/sites/default/files/styles/large/public/2020-09/99-thuyen_hoa.jpg" alt=""></div>
+            <figcaption>Bức ảnh "Thuyền hoa" được chụp tại Hội An, Quảng Nam</figcaption>
+        </li>
+        <li>Thư viện ảnh</li>
+        <div class="media">
+            <div><img src="https://www.elle.vn/app/uploads/2021/03/11/427109/hinh-anh-dep-cua-cac-dia-diem-tren-the-gioi.jpg" alt=""></div>
+            <div><img src="https://static.vinwonders.com/2023/01/cac-loai-hinh-du-lich-1.jpg" alt=""></div>
+            <div><img src="https://hoangphucphoto.com/wp-content/uploads/2022/12/anh-dl-thumb.jpg" alt=""></div>
+            <div><img src="https://pos.nvncdn.com/86c7ad-50310/art/artCT/20230420_7EZ6al08.png" alt=""></div>
+            <div><img src="https://pos.nvncdn.com/86c7ad-50310/art/artCT/20230420_3DNUQEnh.png" alt=""></div>
+            <div><img src="https://media.hanamtv.vn/upload/image/201708/medium/49847_Du-Lich_1-01.jpg" alt=""></div>
+        </div>
+        <li>Chèn video YouTube</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RlPNh_PBZb4?si=jzWeuiKGk4CyLDd7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video width="320" height="240" controls src="istockphoto-2177773295-640_adpp_is.mp4"></video>
+        <li>Chèn audio mp3</li>
+        <audio controls src="istockphoto-2177773295-640_adpp_is.mp4"></audio>
+        <li>Trang portfolio cá nhân</li>
+    </ol>
+    <h1>&#128221 Phần 3: Biểu mẫu nâng cao</h1>
+    <ol start="11">
+        <li>Form đăng nhập</li>
+        <li>Form khảo sát ý kiến</li>
+        <li>Form đặt bàn quán ăn</li>
+        <li>Form gửi phản hồi</li>
+        <li>Form thanh toán đơn hàng</li>
+    </ol>
+    <h1>&#128205 Phần 4: Dự án nhỏ</h1>
+</body>
+
+</html>
